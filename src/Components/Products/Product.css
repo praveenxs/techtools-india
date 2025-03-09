@@ -1,0 +1,175 @@
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.products{
+  margin: 50px auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; 
+  transform: translateY(20px); 
+transition: opacity 1s, transform 1s; 
+}
+
+
+
+.product img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.product{
+  flex-basis: 31%;  
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.product_img_h{
+  position: relative;
+  border-radius: 10px;
+  margin: 10px;
+  background: #d9d8d8;
+  flex-grow: 1;
+}
+
+.caption{
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:rgba(152,15,0,0.5) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  padding-top: 20%;
+  transition: 0.5s;
+}
+.caption img{
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.product:hover .caption {
+  opacity: 1;
+  padding-top: 0px;
+}
+
+.btn-prd{
+  text-align: center;
+}
+
+.tool-cnt{
+  padding: 10px;
+  margin: 15px;
+  /* border-top: 1px solid #000; */
+  text-align: center;
+}
+
+.tool-cnt h4{
+  font-weight: 700;
+  font-size: 18px;
+  color: #D31319;
+ 
+}
+
+.tool-cnt div{
+  font-size: 14px;
+  font-weight: 500;
+}
+.tool-cnt h2:hover{
+  color: #D31319;
+}
+.prd-btn{
+  background-color: #D31319;
+  color: #fff;
+  margin-top: 15px;
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.prd-btn:hover{
+  background-color: transparent;
+  color: #D31319;
+  border: 2px solid;
+  font-weight: 600;
+}
+
+/* ------ Media Query ------ */
+
+@media (max-width: 600px){
+  .products{
+      flex-direction: column;
+      margin-top: -50px;
+  }
+  .product{
+      flex-basis: 100%;
+      margin: 20px;
+  }
+  .title{
+    margin: 40px 0px 30px !important;
+  }
+  .title p{
+    font-size: 22px !important;
+    font-weight: 800 !important;
+  }
+  .title h2 {
+      font-size: 20px !important;
+  }
+  .tool-cnt h6 {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  .btn-prd {
+    margin-top: -35px;
+  }
+}
+
+@media (max-width: 800px){
+  .tool-cnt h6{
+      font-size: 9.4px;
+      font-weight: 700;
+  }
+  .tool-cnt div{
+      font-size: 11px;
+      font-weight: 500;
+  }
+
+  .prd-btn {
+      width: 110px;
+      border: none;
+      padding: 8px;
+      font-size: 14px;
+  }
+
+}
+@media (min-width: 800px) and (max-width: 1024px){
+  .tool-cnt h6 {
+     font-size: 14px;
+     white-space: nowrap; 
+     overflow: hidden;
+     text-overflow: ellipsis; 
+  }
+  .tool-cnt div {
+      font-size: 13px;
+  }
+  
+}

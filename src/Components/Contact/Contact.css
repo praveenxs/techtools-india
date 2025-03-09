@@ -1,0 +1,168 @@
+/* Define the slide-up and fade-in animations */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contact, .contact-col, .contact form, .contact-col ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  /* Animation class to be added when the element is in view */
+
+  .animate {
+    animation: slideUp 2s ease-out forwards;
+  }
+  
+  .cont-bg {
+    background-color: #0C1844;
+  }
+  
+  .contact {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-col {
+    flex-basis: 48%;
+    color: #ffffff;
+  }
+  
+  .contact-col h3 {
+    color: #000f38;
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-col h3 img {
+    width: 35px;
+    margin-left: 10px;
+  }
+  
+  .contact-col p {
+    max-width: 450px;
+    list-style: 0.3;
+  }
+  
+  .contact-col ul li {
+    display: block;
+    align-items: baseline;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .contact-col ul li img {
+    width: 25px;
+    margin-right: 10px; 
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    display: block;
+    width: 100%;
+    background: #dddddd;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    resize: none;
+  }
+  
+  .contact-col span {
+    display: block;
+    margin: 20px 0;
+  }
+
+  .mail-info{margin:20px 0px}
+
+  .mail-info span {
+    margin: 10px 0px;
+  }
+
+  .contact-sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .cont-hed {
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    background: #f5120b;
+    color: #fff;
+    width: 90px;
+    padding: 2px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cont-hed > [data-icon] {
+    padding-right: 10px;
+  }
+  
+  .contact-col h3 {
+    color: #fff;
+  }
+
+  .address div{
+    margin: 10px 0px;
+  }
+  
+.map{
+  width: 200px;
+  height: 200px;
+}
+.address-point{
+  display: flex;
+}
+.address-point .faLocationArrow{
+  background: #d31319;
+  padding: 6px 7px;
+  border-radius: 14px;
+}
+
+
+  /* ------ Media Query ------ */
+  @media (max-width: 1024px){
+    .contact-sub{
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 800px) {
+    .container1 {
+      padding-left: 6% !important;
+      padding-right: 6% !important;
+  }
+  }
+  @media (max-width: 700px) {
+    .contact {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body{
+  background-color: #f5f5f5;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+  cursor: pointer;
+  line-height: 1px;
+}
+.container1{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.btn{
+  background-color: #fff;
+  color: #212121;
+  padding:15px 25px; 
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn img {
+  width: 20px;
+  margin-left: 10px;
+}
+.btn-prd .dark-btn{
+  background: #D31319 !important;
+  color:#fff !important;
+}
+.btn-prd .dark-btn:hover{
+  background: #bcbcbcf6 !important;
+  color:#fff !important;
+  transition: 0.3s;
+}
+.btn-exp .btn:hover{
+  background: #d31319 !important;
+  transition: 0.3s;
+}
+
+/* ------ Media Query ------ */
+
+@media (max-width:1200px) {
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn{
+    padding: 14px 22px;
+  }
+  
+}
+
+@media (max-width:600px) {
+  .container1{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d9d9d9;
+    background-color: #0C1844;
+    color: #fff;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+/* ------ Media Query ------ */
+
+@media (max-width: 600px){
+    .footer{
+        display: block;
+        text-align: center;
+        font-size: 13px;
+    }
+    .footer ul li{
+        margin: 10px;
+    }
+    .footer ul{
+        margin-top: 10px;
+    }
+}
